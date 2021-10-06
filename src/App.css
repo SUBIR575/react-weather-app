@@ -1,38 +1,65 @@
-.App {
+*{
+  padding: 0px;
+  box-sizing: border-box;
+}
+.section{
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section button{
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+  background-color: black;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+}
+.section button:hover{
+  box-shadow: 3px 3px rgb(226, 7, 7);
+}
+.section input{
+  border: none;
+  width: 200px;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 14px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main h3{
+  margin-top: -10px;
+  text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mobileSection{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mobileSection h4{
+  margin-top: -20px;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #FFFFFF;
+text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
 }
